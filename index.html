@@ -12,7 +12,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
     crossorigin="anonymous"></script>
   </head>
-
+  <script defer src="./index.js"></script>
 
   <body>
     <div class="">
@@ -118,7 +118,7 @@
     </div>
 
   <!-- Modal for Login and Register -->
-    <!-- <div class="container mt-3" id="containerLogin">
+    <div class="container mt-3" id="containerLogin">
         <label><h3>Login</h3></label>
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -129,7 +129,7 @@
             <label for="floatingPassword">Password</label>
           </div>
           <button type="button" class="btn btn-outline-primary mt-1">Login</button>
-          <a type="button" class="btn btn-outline-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+          <a type="button"  class="btn btn-outline-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
           <a href="#" class="text-decoration-underline">Forgot password?</a> 
 
         
@@ -142,38 +142,38 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email Address</label>
+                        <input type="email" class="form-control" id="txtModalEmail" placeholder="name@example.com">
+                        <label for="txtModalEmail">Email Address</label>
                       </div>
                       <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name">
-                        <label for="floatingInput">Name</label>
+                        <input type="text" class="form-control" id="txtModalName" placeholder="name">
+                        <label for="txtModalName">Name</label>
                       </div>
                       <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <input type="password" class="form-control" id="txtModalPassword" placeholder="Password">
+                        <label for="txtModalPassword">Password</label>
                       </div>
                       <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="txtModalConfirmPassword" placeholder="Password">
+                        <label for="txtModalConfirmPassword">Confirm Password</label>
                       </div>
                       <div class="container mt-3">
                       <div class="mt-2 row">
                         <label for="radioGender">Gender</label>
                         <div class="form-check col-4">
-                          <input class="form-check-input" type="radio" name="radioGender" id="flexRadioDefault1" checked>
+                          <input class="form-check-input" value="rather" type="radio" name="radioGender" id="ratherRadio" checked>
                           <label class="form-check-label" for="flexRadioDefault1">
                             Rather not say
                           </label>
                         </div>
                         <div class="form-check col-4">
-                          <input class="form-check-input" type="radio" name="radioGender" id="flexRadioDefault1">
+                          <input class="form-check-input" value="male" type="radio" name="radioGender" id="maleRadio">
                           <label class="form-check-label" for="flexRadioDefault1">
                             Male
                           </label>
                         </div>
                         <div class="form-check col-4">
-                          <input class="form-check-input" type="radio" name="radioGender" id="flexRadioDefault2">
+                          <input class="form-check-input" value="female" type="radio" name="radioGender" id="femaleRadio">
                           <label class="form-check-label" for="flexRadioDefault2">
                             Female
                           </label>
@@ -182,8 +182,8 @@
                     </div>
                     <div class="mt-3">
                       <div class="form-floating">
-                      <select id="floatingSelect" class="form-select" aria-label="Default select example">
-                        <option selected>Select year level...</option>
+                      <select id="modalSelect" class="form-select" aria-label="Default select example">
+                        <option value="0" selected>Select year level...</option>
                         <option value="1">1st Year</option>
                         <option value="2">2nd Year</option>
                         <option value="3">3rd Year</option>
@@ -195,24 +195,24 @@
                   <div class="mt-3">
                     <div class="input-group">
                       <span class="input-group-text">Address</span>
-                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                      <textarea id="modalTextArea" class="form-control" aria-label="With textarea"></textarea>
                     </div>
                   </div>
                   <div class="mt-3">
                     <div class="form-floating mb-3">
-                      <input type="date" class="form-control" id="floatingDate" placeholder="Birthdate">
+                      <input type="date" class="form-control" id="modalDate" placeholder="Birthdate">
                       <label for="floatingDate">Birthdate</label>
                     </div>
                   </div>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success">Register</button>
+                <button id="btnModalRegister" type="button" class="btn btn-success">Register</button>
                 </div>
             </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
 
